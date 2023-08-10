@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>my first  page</title>
+    <link rel="stylesheet" href="Task1.css">
+     <link rel="stylesheet" href="/css_Tranning/login.css"> 
+     <link rel="stylesheet" href="task.sub.css">
+   <!-- <script src="/Dom/some_Task/validation.js" defer></script> -->
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item" ><a href="#services-container">Placements</a></li>
+            <li class="item"><a href="#client-section">New Course</a></li>
+            <li class="item"><a href="#conatact">Contact us</a></li>
+            
+        </ul>
+    </nav>
+    <!-- <header> -->
+        <!-- <h1>This is a simple page for using</h1> -->
+    <!-- </header> -->
+
+    <section id="home">
+            <header>
+                
+            <div class="login">
+                <h3 class="head">Login from</h3>
+                <form action="#" name="login"  onsubmit="return validateformLogin()">
+                    <table style="text-align: center;">
+                        <tr>
+                            <td>Enter Email:</td>
+                            <td><input type="email" name="mail" id="mail"></td>
+                        </tr>
+                        <tr>
+                            <td>Enter passord:</td>
+                            <td><input type="password" name="pass" id="pass"></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><input  class="sub" type="submit" value="login"/></td>  <p id="err" style="color:red;"></p>
+                        </tr>
+                    
+                        <tr>
+                            <td style="text-align: center;">"Sign Up"<a href="/Dom/val.html" target="_blank"> New Account</a></td> 
+                        </tr>
+                    </table>
+                </form>
+            </header>
+        </section>
+        <main>
+        <button>    <h1 class="heading"> <a style="text-decoration: none;" class="fuu" href="/Dom/some_Task/Enroll_Course.html">Enroll_Course</a></h1></button> 
+            <section id="client-section">
+              <h1 class="h-primary center">New course</h1>
+              <div id="clients">
+                  <div class="client-item">
+                    <a style="text-decoration: none;" class="fuu" href="/Dom/some_Task/Enroll_Course.html">
+                      <img src="/Dom/some_Task/htmlcss.jpg" alt="htmlcss course"></a>
+                  </div>
+                  <div class="client-item">
+                      <img src="/Dom/some_Task/java-logo.png" alt="java course">
+                  </div>
+                
+                  <div class="client-item">
+                      <img src="/Dom/some_Task/Python-PNG-Image.png" alt="Python course">
+                  </div>
+                  <div class="client-item">
+                      <img src="aiml.jpg" alt="Ai AND Ml course">
+                  </div>
+              </div>
+      
+          </section>
+          
+        </main>
+         <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+        <!-- <p>Copyright &copy; www.onlineEducation.com. All rights reserved</p> -->
+        <!-- <footer style="text-align: center;">
+            <h1>Copyright &copy; www.onlineEducation.com. All rights reserved!</h1>
+        </footer> -->
+             <script>
+                    function validateformLogin() 
+                    {
+                        var mail = document.login.mail.value;
+                         var pass = document.login.pass.value;
+            
+                         if (mail == null || mail === "") {
+                            document.getElementById("err").innerHTML = "Email  cannot be Empty";
+                             return false;
+                          } else if (pass == null || pass === "") {
+                             document.getElementById("err").innerHTML = "Password cannot be empty";
+                         return false;
+                          }
+                    }
+        </script>
+        <footer style="text-align: center;">
+            <h1>Copyright &copy; www.onlineEducation.com. All rights reserved!</h1>
+        </footer>
+</body>
+</html>
